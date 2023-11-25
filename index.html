@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Kendo console</title>
+
+    <script src="Scripts/jquery/dist/jquery.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/local/kendo/kendoConsole.css" rel="stylesheet" />
+    <script src="Scripts/Local/index1.js"></script>
+    <link href="Content/local/index1.css" rel="stylesheet" />
+    <script src="Scripts/Local/kendo/kenoConsole.js"></script>
+
+</head>
+<body>
+
+    <div class="topAlert">
+        <div class="alert alert-primary" role="alert">
+            <h1 style="font-size: 12px">Peek</h1>
+        </div>
+    </div>
+
+    <div class="container" role="main">
+
+        <img class="oops mt-4" alt="oops" src="Images/oops.png" />
+
+        <div class="alert alert-light text-center" role="alert">
+            <div class="alert-heading fs-6">Toggle kendo output visibility</div>
+            <span style="font-size: 8px;" ><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>1</kbd></span>
+        </div>
+
+        <div class="well-container">
+
+            <div class="col text-center">
+                <button type="button" class="btn btn-dark w-100" id="btnNotifications">
+                    Email Notifications <span class="badge badge-light" id="lblIncrement">0</span>
+                </button>
+            </div>
+
+            <div class="col text-center mt-1">
+                <button class="btn btn-dark w-100" id="btnGetNotificationCount">Get notification count</button>
+            </div>
+
+            <div class="col text-center mt-1">
+                <button type="button" class="btn btn-dark w-100" id="btnShowCurrentTime">
+                    Now
+                </button>
+            </div>
+
+        </div>
+
+        <div id="kendoDisplay" class="row" style="display:none">
+            <div class="well-container">
+                <div class="col text-center">
+                    <div class="console" style="overflow-y: scroll; height:100px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
